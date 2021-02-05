@@ -1,9 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-tf.compat.v1.enable_eager_execution()
+
 #加载数据集
 bosten_housing = tf.keras.datasets.boston_housing
 (train_x,train_y),(test_x,test_y) = bosten_housing.load_data()
